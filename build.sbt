@@ -1,6 +1,13 @@
+
 name := "ScalaQuality"
 
 version := "1.0"
 
-scalaVersion := "2.12.1"
-        
+//scalaVersion := "2.12.1"
+
+libraryDependencies += "org.scalactic" %% "scalactic" % "3.0.1"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.1" % "test"
+
+coverageEnabled := true
+
+wartremoverErrors ++= Warts.unsafe
