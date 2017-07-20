@@ -14,56 +14,56 @@ object NumExercise extends App {
 
     bNum match {
 
-      case a if numStr.length > THREE & numStr.length <= SIX =>
+      case thousand if numStr.length > THREE & numStr.length <= SIX =>
           val thou = (numStr.substring (ZERO, THREE) + " dnasuoht " + numStr.substring (THREE, numStr.length) ).reverse
 
-        val thouF = thou.replace ("thousand", "mille")
-          "English: " + thou + ", French: " + thouF
+        val thouFrench = thou.replace ("thousand", "mille")
+          "English: " + thou + ", French: " + thouFrench
 
 
-      case b if numStr.length > SIX & numStr.length <= NINE =>
+      case million if numStr.length > SIX & numStr.length <= NINE =>
           val mill = (numStr.substring (ZERO, THREE) + " dnasuoht " + numStr.substring (THREE, SIX) + " noillim " +
           numStr.substring (SIX, numStr.length) ).reverse
 
-        val millF = mill.replace ("thousand", "mille")
-          "English: " + mill + ", French: " + millF
+        val millFrench = mill.replace ("thousand", "mille")
+          "English: " + mill + ", French: " + millFrench
 
 
-      case c if numStr.length > NINE & numStr.length <= TWELVE =>
+      case billion if numStr.length > NINE & numStr.length <= TWELVE =>
           val bill = (numStr.substring (ZERO, THREE) + " dnasuoht " + numStr.substring (THREE, SIX) + " noillim " +
           numStr.substring (SIX, NINE) + " noillib " + numStr.substring (NINE, numStr.length) ).reverse
 
-          val billF = bill.replace ("thousand", "mille").replace ("billion", "milliard")
-          "English: " + bill + ", French: " + billF
+          val billFrench = bill.replace ("thousand", "mille").replace ("billion", "milliard")
+          "English: " + bill + ", French: " + billFrench
 
 
-      case d if numStr.length > TWELVE & numStr.length <= FIFTEEN =>
+      case trillion if numStr.length > TWELVE & numStr.length <= FIFTEEN =>
           val trill = (numStr.substring (ZERO, THREE) + " dnasuoht " + numStr.substring (THREE, SIX) + " noillim " +
           numStr.substring (SIX, NINE) + " noillib " + numStr.substring (NINE, TWELVE
           ) + " noillirt " + numStr.substring (TWELVE, numStr.length) ).reverse
 
-          val trillF = trill.replace ("thousand", "mille").replace ("billion", "milliard")
+          val trillFrench = trill.replace ("thousand", "mille").replace ("billion", "milliard")
           .replace ("trillion", "billion")
-          "English: " + trill + ", French: " + trillF
+          "English: " + trill + ", French: " + trillFrench
 
 
-      case e if numStr.length > FIFTEEN & numStr.length <= EIGHTEEN =>
+      case quadrillion if numStr.length > FIFTEEN & numStr.length <= EIGHTEEN =>
           val quad = (numStr.substring (ZERO, THREE) + " dnasuoht " + numStr.substring (THREE, SIX) + " noillim " +
           numStr.substring (SIX, NINE) + " noillib " + numStr.substring (NINE, TWELVE) + " noillirt " +
           numStr.substring (TWELVE, FIFTEEN) + " noillirdauq " + numStr.substring (FIFTEEN, numStr.length) ).reverse
 
-          val quadF = quad.replace ("thousand", "mille").replace ("billion", "milliard").replace ("trillion", "billion")
+          val quadFrench = quad.replace ("thousand", "mille").replace ("billion", "milliard").replace ("trillion", "billion")
           .replace ("quadrillion", "billiard")
-          "English: " + quad + ", French: " + quadF
+          "English: " + quad + ", French: " + quadFrench
 
 
-      case f if numStr.length > EIGHTEEN & numStr.length <= TWENTYONE =>
+      case quintillion if numStr.length > EIGHTEEN & numStr.length <= TWENTYONE =>
           val quin = (numStr.substring (ZERO, THREE) + " dnasuoht " + numStr.substring (THREE, SIX) + " noillim " +
           numStr.substring (SIX, NINE) + " noillib " + numStr.substring (NINE, TWELVE) + " noillirt " +
           numStr.substring (TWELVE, FIFTEEN) + " noillirdauq " + numStr.substring(FIFTEEN, EIGHTEEN) + " noillitniuq " +
           numStr.substring (EIGHTEEN, numStr.length) ).reverse
 
-          val quinF = quin.replace ("thousand", "mille").replace ("billion", "milliard").replace ("trillion", "billion")
+          val quinFrench = quin.replace ("thousand", "mille").replace ("billion", "milliard").replace ("trillion", "billion")
           .replace ("quadrillion", "billiard").replace ("quintillion", "trillion")
           "English: " + quin + ", French: " + quinF
 
